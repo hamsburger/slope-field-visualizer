@@ -4,24 +4,24 @@ var yCoordinate;
 var angle;
 
 function promptForFxn(){
-  var input = prompt("Enter a slope field function (in the form of (expression 1, expression 2) in terms of x and y): ", "Enter Here");
-
-  if (input != null || input.contains(",")){
-    // global variables automatic
-    expression1 = input.split(',')[0];
-    expression2 = input.split(',')[1];
-  }
-
-  var operation = new RegExp("[-+*/]"); // Put - in front to avoid it begin read as a range function 
-  if(expression1.match(operation) != null){
-    alert("Operation Found");
-    console.log(expression1.match(operation));
-  } else {
-    console.log("How many characters does the expression have?" + expression1.length)
-    if (expression1.length > 1){
-      alert("Multiplication Found");
-    }
-  }
+  // var input = prompt("Enter a slope field function (in the form of (expression 1, expression 2) in terms of x and y): ", "Enter Here");
+  //
+  // if (input != null || input.contains(",")){
+  //   // global variables automatic
+  //   expression1 = input.split(',')[0];
+  //   expression2 = input.split(',')[1];
+  // }
+  //
+  // var operation = new RegExp("[-+*/]"); // Put - in front to avoid it begin read as a range function
+  // if(expression1.match(operation) != null){
+  //   alert("Operation Found");
+  //   console.log(expression1.match(operation));
+  // } else {
+  //   console.log("How many characters does the expression have?" + expression1.length)
+  //   if (expression1.length > 1){
+  //     alert("Multiplication Found");
+  //   }
+  // }
 
   canvasStart();
 }
